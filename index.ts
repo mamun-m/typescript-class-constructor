@@ -1,12 +1,27 @@
-// var Names: string[];
-// var Names: Array<string>;
+// tuple data types
 
-// Names = ["mia", "mamun", "khan", "hasan"];
+// let userId: [string, number];
+// userId = ["mamun", 21];
+// console.log(userId);
 
-// console.log(Names);
+// enum data types  // duplicate value is not allowed here //
 
-// multiple types of arrays
+// enum firstRequest {
+//   readData = 1,
+//   writeData = 3,
+//   deleteData,
+// }
+// console.log(firstRequest.readData);
 
-var MultipleTypes: (string | number | boolean)[];
-MultipleTypes = ["mia", 1, true];
-console.log(MultipleTypes);
+// enum secondRequest {
+//   textData = "full request",
+//   deleteData = "hello function",
+// }
+// console.log(secondRequest.deleteData);
+
+enum thirdRequest {
+  firstName = "hello mamun",
+  lastName = "burning boy abir",
+  id = 46546,
+}
+console.log(thirdRequest.id);
